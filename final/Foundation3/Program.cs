@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-
         Address address = new Address("Golden Star Event Center: 456 Oak Avenue", "Los Angeles", "CA", "USA");
 
         Lecture lecture = new Lecture("Prince EA", 80, "Unleashing Your Inner Champion: The Power of Self-Motivation", "In this motivational talk, Prince EA will inspire and empower his audience to tap into their inner champion and unlock their full potential.", "05/03/2023", "7:00 P.M", address);
@@ -31,6 +30,5 @@ class Program
         outdoor.OutdoorFullDetails();
         Console.WriteLine();
         outdoor.DisplayShortDescription();
-
     }
 }
