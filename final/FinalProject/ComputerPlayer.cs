@@ -7,8 +7,9 @@ public class ComputerPlayer : Player
     }
 
     // Methods
-    public override int GetMove()
+    public override int GetMove(Board board)
     {
+        return 0;
         // Method implementation
     }
 }

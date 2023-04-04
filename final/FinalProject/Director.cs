@@ -1,18 +1,17 @@
-public class Game
+public class Director
 {
     // Attributes
     private Board board;
     private Player player1;
     private Player player2;
-    private Player currentPlayer;
-    private GameResult gameResult;
+    private GameData gameData;
 
     // Consutructors
-    public Game(string Player1Name, string player2Name)
+    public Director(string Player1Name, string player2Name)
     {
         board = new Board();
-        player1 = new Player(Player1Name);
-        player2 = new Player(player2Name);
+        player1 = new Player(Player1Name, "X");
+        player2 = new Player(player2Name, "O");
         currentPlayer = player1;
         gameResult.InProgress = true;
     }

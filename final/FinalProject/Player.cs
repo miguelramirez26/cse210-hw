@@ -3,8 +3,8 @@ using System;
 public class Player
 {
     // Attributes
-    public string _name { get; }
-    public string _marker { get; }
+    protected string _name { get; }
+    protected string _marker { get; }
 
     // Constructors
     public Player(string name, string marker)
@@ -17,5 +17,6 @@ public class Player
     public virtual int GetMove(Board board)
     {
         // Method implementation
+        return 0;
     }
 }

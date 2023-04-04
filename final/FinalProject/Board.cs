@@ -1,35 +1,33 @@
 public class Board 
 {
     // Attributes
-    private string[,] pieces;
-    private int numRows;
-    private int numCols;
+    private char[,] board = new char[3, 3]
+    {
+        {' ', ' ', ' '},
+        {' ', ' ', ' '},
+        {' ', ' ', ' '}
+    };
 
     // Constructors
-    public Board(int numRows, int numCols) {
-        this.numRows = numRows;
-        this.numCols = numCols;
-        this.pieces = new string[numRows, numCols];
-    }
+    public Board() {}
 
     // Methods
-    public string GetPiece(int row, int col) 
+    public char[,] GetBoard() 
     {
-        return pieces[row, col];
+        return board;
     }
 
-    public void SetPiece(int row, int col, string piece) 
+    public void SetPiece(int row, int col, char piece) 
     {
-        pieces[row, col] = piece;
+        board[row, col] = piece;
     }
 
     public bool IsBoardFull() 
     {
+        // iterate through each element in the 2d array
+        //      check for whitespace char *if element == ' '*
+        //          return false
+        //          break    
         return true;
-    }
-
-    public bool IsGameOver() 
-    {
-        return false;
     }
 }
