@@ -18,6 +18,7 @@ class Customer
     {
         return _address.InUSA();
     }
+    
     public void DisplayCustomer()
     {
         Console.WriteLine();

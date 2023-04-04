@@ -28,6 +28,7 @@ class Order
     {
         _products.Add(product);
     }
+    
     public int OrderTotal()
     {
         int itemFee = 0;
@@ -38,6 +39,7 @@ class Order
         int orderTotal = itemFee + ShippingCost();
         return orderTotal;
     }
+
     public void PackingLabel()
     {
         foreach (Product product in _products)
@@ -45,9 +47,9 @@ class Order
             product.DisplayProduct();
         }
     }
+
     public void ShippingLabel(Customer customer)
     {
         customer.DisplayCustomer();
     }
-
 }
